@@ -6,7 +6,7 @@ from .models import CrowPost
 
 def index(request):
     # to do: add context
-    posts = CrowPost.objects.order_by("published_date")
+    posts = CrowPost.objects.order_by("-published_date")
     context = {
         "Author": "Amine",
         "posts": posts, 

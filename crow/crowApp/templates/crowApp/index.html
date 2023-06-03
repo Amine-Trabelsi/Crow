@@ -12,18 +12,23 @@
     
 </head>
 <body>
-
+	<!-- big image the moves slow -->
 	<div class="parallax-container">
       <div class="parallax"><img src="{% static 'crow/img/wallpaper.jpg' %}"></div>
     </div>
 
-<div class="section white">
-      <div class="row container">
+ <!-- big section in middle -->
+<div class="section teal darken-4 white-text">
+
+<div class="container  white black-text" >
 {% if posts %}
- <div class="col s12 m7">
  	{% for post in posts %}
-    <h2 class="header">{{ post.title }}</h2>
-    <div class="card horizontal">
+<div class="col container" style="padding-top:20px;padding-bottom:20px;">
+ <div class="col s12 m7" >
+    <h3 class="header" >{{ post.title }}</h3>
+    	<p> {{ post.published_date }} </p>
+    <div class="card horizontal black-text">
+
       <!--div class="card-image">
         <img src="https://lorempixel.com/100/190/nature/6">
       </div-->
@@ -36,12 +41,15 @@
         </div-->
       </div>
     </div>
-    <hr>
-    {% endfor %}
   </div>
+</div>
+<hr>
+    <!-- div class="divider"></div -->
+    {% endfor %}
 {% endif %}
 </div>
 </div>
+
 <!-- Compiled and minified JavaScript -->
     <script src="{% static 'crow/js/materialize.min.js' %}"></script>
     <script src="{% static 'crow/js/code.js' %}"></script>
