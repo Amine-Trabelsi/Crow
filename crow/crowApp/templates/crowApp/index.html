@@ -1,29 +1,49 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
+	<title>Crow</title>
+
+	    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="{% static 'crow/css/materialize.min.css' %}">
+
+    
 </head>
 <body>
 
-Templates are working
+	<div class="parallax-container">
+      <div class="parallax"><img src="{% static 'crow/img/wallpaper.jpg' %}"></div>
+    </div>
 
-<h1> 
-	Author: {{ Author }}
-</h1>
-
+<div class="section white">
+      <div class="row container">
 {% if posts %}
-<ul>
-	{% for post in posts %}
-	<li>
-	<h3>{{ post.title }} </h3>
-	<p>{{ post.published_date}}</p>
-	<p>{{ post.data }}</p>
-	</li>
-	{% endfor %}
-
-</ul>
+ <div class="col s12 m7">
+ 	{% for post in posts %}
+    <h2 class="header">{{ post.title }}</h2>
+    <div class="card horizontal">
+      <!--div class="card-image">
+        <img src="https://lorempixel.com/100/190/nature/6">
+      </div-->
+      <div class="card-stacked">
+        <div class="card-content">
+          <p>{{ post.data }}</p>
+        </div>
+        <!--div class="card-action">
+          <a href="#">This is a link</a>
+        </div-->
+      </div>
+    </div>
+    <hr>
+    {% endfor %}
+  </div>
 {% endif %}
+</div>
+</div>
+<!-- Compiled and minified JavaScript -->
+    <script src="{% static 'crow/js/materialize.min.js' %}"></script>
+    <script src="{% static 'crow/js/code.js' %}"></script>
 </body>
 </html>
