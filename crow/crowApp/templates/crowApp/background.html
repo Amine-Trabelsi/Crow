@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Crow</title>
+
+	    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="{% static 'crow/css/materialize.min.css' %}">
+
+    
+</head>
+<body>
+	<!-- big image the moves slow -->
+	<div class="parallax-container">
+      <div class="parallax"><img src="{% static 'crow/img/wallpaper.jpg' %}"></div>
+    </div>
+
+{% block content %}
+{% endblock %}
+
+
+<!-- Compiled and minified JavaScript -->
+    <script src="{% static 'crow/js/materialize.min.js' %}"></script>
+    <script src="{% static 'crow/js/code.js' %}"></script>
+</body>
+</html>

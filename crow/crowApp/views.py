@@ -11,4 +11,4 @@ def index(request):
         "Author": "Amine",
         "posts": posts, 
     }
-    return render(request, "crowApp/index.html", context)
+    return render(request, "crowApp/posts.html", context)

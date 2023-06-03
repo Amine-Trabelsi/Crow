@@ -1,0 +1,36 @@
+{% extends "crowApp/background.html" %}
+
+{% block content %}
+
+<div class="section teal darken-4 white-text">
+ 
+<div class="container  white black-text" >
+{% if posts %}
+ 	{% for post in posts %}
+		<div class="col container" style="padding-top:20px;padding-bottom:20px;">
+		 <div class="col s12 m7" >
+		    <h3 class="header" >   {{ post.title }} </h3>
+		    	<p> {{ post.published_date }} </p>
+		    <div class="card horizontal black-text">
+
+		      <!--div class="card-image">
+		        <img src="https://lorempixel.com/100/190/nature/6">
+		      </div-->
+		      <div class="card-stacked">
+		        <div class="card-content">
+		          <p> {{ post.data }} </p>
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<hr>
+	{% endfor %}
+
+{% else %}
+ 	No posts yet
+{% endif %}
+</div>
+</div>
+
+{% endblock %}
