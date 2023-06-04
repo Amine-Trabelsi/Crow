@@ -29,7 +29,7 @@
 
   <ul class="pagination center">
   	{% if page_obj.has_previous %}
-    <li class="disabled"><a href="?page={{ page_obj.previous_page_number }}"><i class="material-icons">chevron_left</i></a></li>
+    <li class="waves-effect"><a href="?page={{ page_obj.previous_page_number }}"><i class="material-icons">chevron_left</i></a></li>
     {% endif %}
     {% for page_number in page_obj.paginator.page_range %}
     	{% if page_number == page_obj.number %}
