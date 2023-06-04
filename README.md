@@ -20,8 +20,8 @@
 
 ### Built With
 
-* [![Django][Django.com]][https://www.djangoproject.com/]
-* [![Materialize][Materializecss.com]][https://materializecss.com/]
+* [Django](https://www.djangoproject.com/)
+* [Materialize](https://materializecss.com/)
 
 <!-- GETTING STARTED -->
 ## Running the app
