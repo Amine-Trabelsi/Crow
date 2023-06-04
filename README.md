@@ -4,7 +4,7 @@
 <br />
 <div align="center">
   <a href="#">
-    <img src="images/tyler-quiring-crow-image.jpg" alt="Logo" width="500" height="200">
+    <img src="images/tyler-quiring-crow-image.jpg" alt="Logo" width="500" height="250">
   </a>
 
   <h3 align="center">Crow postings</h3>
